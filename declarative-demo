@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    stages{
+        stage("Git checkout"){
+            steps{
+                git credentialsId: '32ebda8e-74b4-4f6c-af82-fa289b81cb79', url: 'https://github.com/saikiran2103/java-jsp-diary.git'
+            }
+        }
+    }
+    
+}
